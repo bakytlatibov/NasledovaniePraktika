@@ -12,14 +12,14 @@ public class Main {
    Person person= new Person();
    Mugalim mugalim=new Mugalim();
    mugalim.setName("Meder");
-   mugalim.setMildeti("okutat");
+   mugalim.setAge(22);
+        System.out.println(mugalim);
+        mugalim.Do();
    Student student=new Student();
    student.setName("Bakyt");
-   student.setMildeti("okuit");
-
-
-   System.out.println(mugalim);
-        System.out.println(student);
+   student.setAge(22);
+   System.out.println(student);
+   student.Do();
 
 
     }

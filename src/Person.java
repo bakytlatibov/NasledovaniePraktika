@@ -1,10 +1,10 @@
 public class Person {
     private String name;
-    private  String mildeti;
+    private  int age;
 
-    public Person(String name,String mildeti) {
+    public Person(String name,int age) {
         this.name = name;
-        this.mildeti=mildeti;
+        this.age=age;
 
     }
     public Person(){
@@ -15,16 +15,16 @@ public class Person {
         return name;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getMildeti() {
-        return mildeti;
-    }
-
-    public void setMildeti(String mildeti) {
-        this.mildeti = mildeti;
     }
     public void Do(){
 
@@ -32,7 +32,7 @@ public class Person {
 
     }
     public String toString(){
-        return "name;  "+getName()+",  "+"mildet:  "+getMildeti();
+        return "name;  "+getName()+",  "+"age:  "+getAge();
 
 
     }
